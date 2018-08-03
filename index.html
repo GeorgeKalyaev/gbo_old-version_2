@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>AutoServicing - Auto Service & Workshop HTML5 Website Template</title>
+        <!-- Favicon -->
+        <link rel="icon" sizes="16x16" href="assets/img/favicon-icon.png">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<!-- Font-awesome CSS -->
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		<!-- Flaticon CSS -->
+		<link rel="stylesheet" href="assets/css/flaticon.css">
+		<!-- Ionicons CSS -->
+		<link rel="stylesheet" href="assets/css/ionicons.min.css">
+		<!-- Owl Carousel CSS -->
+		<link rel="stylesheet" href="assets/css/owl.carousel.css">
+		<!-- Magnific Popup CSS -->
+		<link rel="stylesheet" href="assets/css/magnific-popup.css">
+		<!-- Swiper CSS -->
+		<link rel="stylesheet" href="assets/css/swiper.min.css">
+		<!-- Datepicker CSS -->
+		<link rel="stylesheet" href="assets/css/datepicker.css">
+		<!-- Animate CSS -->
+		<link rel="stylesheet" href="assets/css/animate.css">
+		<!-- Style CSS -->
+		<link rel="stylesheet" href="style.css">
+		<!-- Responsive CSS -->
+		<link rel="stylesheet" href="assets/css/responsive.css">
+		<!-- jQuery min js -->
+		<script src="assets/js/jquery-1.12.4.min.js"></script>
+	</head>
+	
+	<body>
+        <!-- Start Top Header Area -->
+        <div class="top-header-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-9">
+                        <ul>
+                            <li><a href="#" id="timeDay"><i class="fa fa-clock-o"></i></a></li>
+                            <script>
+                             
+                                function myFunction() {
+                                    var d = new Date();
+                                    var weekday = new Array(7);
+                                    weekday[0] = "Суббота: 9:00 - 21:00*";
+                                    weekday[1] = "Понедельник: 9:00 - 21:00*";
+                                    weekday[2] = "Вторник: 9:00 - 21:00*";
+                                    weekday[3] = "Среда: 9:00 - 21:00*";
+                                    weekday[4] = "Четверг: 9:00 - 21:00*";
+                                    weekday[5] = "Пятница: 9:00 - 21:00*";
+                                    weekday[6] = "Воскресенье: 9:00 - 21:00*";
+
+                                    var n = weekday[d.getDay()];
+                                    document.getElementById("timeDay").innerHTML = n;
+                                }
+                                myFunction();
+                            
+                            </script>
+                            <li><a href="#"><i class="fa fa-envelope"></i> letter@gasgbo.ru</a></li>
+                            <li><a href="tel:8(926)543-5554"><i class="fa fa-phone"></i> 8(926) 543-5554</a></li>
+                            <li><a href="tel:8(926)543-5554"><i class="fa fa-phone"></i> 8(916) 055-5583</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-3">
+                        <div class="share-icons">
+                            <ul>
+                                <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://vk.com/gas_gbo"><i class="fa fa-vk"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Start Top Header Area -->
+        
+        <!-- Start Main Menu Area -->
+        <div class="main-menu-area" data-spy="affix" data-offset-top="55">
+            <div class="container"> 
+                <div class="row"> 
+                    <div class="col-md-3"> 
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/img/logo.png" alt="Logo"></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-9"> 
+                        <nav class="navbar navbar-default">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar top-bar"></span>
+                                    <span class="icon-bar middle-bar"></span>
+                                    <span class="icon-bar bottom-bar"></span>
+                                </button>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <div class="main-menu">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li class="active"><a href="index.html">Главная</a></li>
+                              
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">О компании <i class="fa fa-angle-down"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="testimonials.html">Лицензии и  сертификаты</a></li>
+                                                <li><a href="about-us.html">Услуги</a></li>
+                                               
+                                           
+                                            </ul> 
+                                        </li>   
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Установка ГБО <i class="fa fa-angle-down"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li class="dropdown-menu right-top">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">По производителям <i class="fa fa-angle-right"></i></a> 
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="gbo-zavoli.html">ГБО Zavoli</a></li>
+                                                        <li><a href="gbo-omvl.html">ГБО OMVL</a></li>
+                                                        <li><a href="gbo-tamona.html">ГБО Tamona</a></li>
+                                                    </ul>
+                                                </li>
+                                               <li class="dropdown-menu right-top">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">По поколению <i class="fa fa-angle-right"></i></a> 
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="four-plus-generation.html">4+ поколение</a></li>
+                                                        <li><a href="#">4 поколение</a></li>
+                                                        <li><a href="#">2 поколение</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="variator-sidebar.html">Установка вариатора <br>  опережения зажигания</a></li>
+                                                <li><a href="service-gbo.html">Обслуживание и  ремонт ГБО</a></li>
+                                                <li><a href="diagnostics-gbo.html">Диагностика ГБО</a></li>
+                                           </ul> 
+                                        </li>
+                                        
+                                        <li><a href="our-mission.html">Поколение ГБО</a></li>
+                                        <li><a href="pricing.html">Цены</a></li>
+                                 
+                                        <li><a href="pricing.html">Наши работы</a></li>
+                                      
+                                        
+                                        <li><a href="contact-us.html">Контакты</a></li>
+                                     
+                                    </ul>
+                                </div>
+                            </div><!-- /.navbar-collapse -->   
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+        
+        <!-- Start Homepage Slider -->
+        <div class="homepage-slides-wrapper">
+            <!-- Slider main container -->
+            <div class="swiper-container swiper1">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide slide-bg-1">
+                        <div class="d-table">
+                            <div class="d-table-cell">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6 col-md-offset-6">
+                                            <h1>Установка ГБО на авто в Москве и Московской области</h1>
+                                            <p>Ценность-это услуга доверия. Доверие Ваших клиентов к вам. Доверие к своим людям, стратегиям и системам. И всегда доставляет по ожиданию.</p>
+                                            <a class="btn theme-btn go_to" href="#element">Обртаный звонок</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide slide-bg-2">
+                        <div class="d-table">
+                            <div class="d-table-cell">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6 col-md-offset-6">
+                                            <h1>С более чем 25-летним опытом работы в автосервисах</h1>
+                                            <p>Ценность-это услуга доверия. Доверие Ваших клиентов к вам. Доверие к своим людям, стратегиям и системам. И всегда доставляет по ожиданию.</p>
+                                            <a class="btn theme-btn go_to" href="#element">Обртаный звонок</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide slide-bg-3">
+                        <div class="d-table">
+                            <div class="d-table-cell">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6 col-md-offset-6">
+                                            <h1>С более чем 25-летним опытом работы в автосервисах</h1>
+                                            <p>Ценность-это услуга доверия. Доверие Ваших клиентов к вам. Доверие к своим людям, стратегиям и системам. И всегда доставляет по ожиданию.</p>
+                                            <a class="btn theme-btn go_to" href="#element">Обртаный звонок</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination swiper-pagination1"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+        </div>
+        <!-- End Homepage Slider -->
+        
+        
+        <!-- Start Services Area -->
+        <div class="content-block-area gray-bg">
+            <div class="container">
+                <div class="row">
+                   <div class="col-md-12">
+                       <div class="section-title text-center">
+                           <h2><span>Плюсы</span> установки<span> газобаллонного</span> оборудования</h2>
+                           <div class="car-icon"><img src="assets/img/cars.png" alt="car"></div>
+                           <p>В последнее время оно становится все более востребованным. К числу преимуществ в первую очередь следует отнести уменьшение расхода средств на топливо. Существенная экономия достигается за счет меньшей стоимости природного газа и пропана-бутана по сравнению с бензином (на 30 и 50% соответственно), в то же время, по динамическим характеристикам ему ни в чем не уступают. Также в дальнейшем вы сможете сэкономить за счет недорогого обслуживания. Монтаж позволяет достичь экологичности благодаря максимальному сокращению количества вредных выбросов, попадающих в атмосферу. Стоит отметить, что современное ГБО имеет несколько степеней защиты, поэтому полностью безопасно.Таким образом, если установку газобаллонного оборудования на авто проводят настоящие профессионалы своего дела, такие, как сотрудники компании Газ-Сервис, то переоборудование транспортного средства на газ приносит исключительно положительные моменты. К их числу следует отнести: </p>
+                       </div>
+                   </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="featured-boxed text-center">
+                           <div class="octagonWrap">
+                                <div class="octagon"><i class="flaticon-oil"></i></div>
+                            </div>
+                            <h3>Oil Change</h3>
+                            <div class="upper-line"></div>
+                            <div class="bottom-line"></div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-4">
+                        <div class="featured-boxed text-center">
+                           <div class="octagonWrap">
+                                <div class="octagon"><i class="flaticon-motor-1"></i></div>
+                            </div>
+                            <h3>Motor Mount</h3>
+                            <div class="upper-line"></div>
+                            <div class="bottom-line"></div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-4">
+                        <div class="featured-boxed text-center">
+                           <div class="octagonWrap">
+                                <div class="octagon"><i class="flaticon-breaks"></i></div>
+                            </div>
+                            <h3>Brake Repair</h3>
+                            <div class="upper-line"></div>
+                            <div class="bottom-line"></div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="separator-line"></div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="services-item-two">
+                            <div class="services-item-mask">
+                                <div class="pic">
+                                    <img src="assets/img/services-img-one.jpg" alt="Image">
+                                    <ul class="single-links">
+                                        <li><a href="gbo-zavoli.html">Подробнее <i class="fa fa-long-arrow-right"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="services-item-info">
+                                <h3 class="title">Установка ГБО ZAVOLI</h3>
+                                <span class="post">Lorem Ipsum</span>
+                                <p class="description">
+                                    Zavoli — итальянская компания, базируемая в Чезене - мировой лидер в проектировании и производстве газобаллонного оборудования автомобильной промышленности.Основанная в 1993, компания Zavoli за короткий период времени достигла уровня одного из ведущих брендов на международной арене в сфере ГБО.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="services-item-two">
+                            <div class="services-item-mask">
+                                <div class="pic">
+                                    <img src="assets/img/services-img-two.jpg" alt="Image">
+                                    <ul class="single-links">
+                                        <li><a href="gbo-omvl.html">Подробнее <i class="fa fa-long-arrow-right"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="services-item-info">
+                                <h3 class="title">Установка ГБО OMVL</h3>
+                                <span class="post">Lorem Ipsum</span>
+                                <p class="description">
+                                    Основанная в 1980 году недалеко от Болоньи (Италия) компания OMVL (входит в состав Westport Fuel Systems) в настоящее время является серьезным конкурентом продукции таких именитых производителей автомобильного газового оборудования, как BRC, Digitronic, Tomasetto, Atiker, Lovato и Zavoli.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="services-item-two">
+                            <div class="services-item-mask">
+                                <div class="pic">
+                                    <img src="assets/img/services-img-three.jpg" alt="Image">
+                                    <ul class="single-links">
+                                        <li><a href="gbo-tamona.html">Подробнее <i class="fa fa-long-arrow-right"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="services-item-info">
+                                <h3 class="title">Установка ГБО TAMONA</h3>
+                                <span class="post">Lorem Ipsum</span>
+                                <p class="description">
+                                    С 2000 года Штаб-квартира Компании TAMONA находится в г. Вильнюс (Литва). Основной вид деятельности, это разработка и производство на собственном современном заводе, электронных компонентов для автомобильного газобаллонного оборудования и систем для охраны автомобилей.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-12 text-center">
+                        <a href="services-v2.html" class="btn theme-btn">Все производители</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Services Area -->
+    
+        <!-- Start Why Choose Us Area -->
+        <div class="content-block-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 ">
+                       <div class="section-title text-center">
+                           <h2><span>Зачем выбирать</span> нас</h2>
+                           <div class="car-icon"><img src="assets/img/cars.png" alt="car"></div>
+                           <p>Сегодня работает большое количество автомастерских и сервисных центров, которые предлагают такую услугу, как установка ГБО на автомобиль. Почему же стоит обратиться в нашу компанию? Мы ценим время своих клиентов и именно поэтому готовы оперативно выполнить установку газобаллонного оборудования в короткий срок. Применение только сертифицированного оборудования, можем гарантировать качественное сервисное обслуживание, а также любые ремонтные работы, небольшую стоимость которых также можно отнести к преимуществам нашей компании. Также всегда можем предложить большой ассортимент дополнительных материалов и запчастей: редукторы, газовые баллоны, баки, мультиклапаны и др.</p>
+                       </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 col-md-4">
+                        <div class="boxed-item">
+                            <span class="sirial-number">01</span>
+                            <span class="single-boxed"><i class="flaticon-crane"></i></span>
+                            <h3>Car Inspection</h3>
+                            <p>Монтаж ГБО на любые типы автомобилей</p>  
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-4 col-md-4">
+                        <div class="boxed-item">
+                            <span class="sirial-number">02</span>
+                            <span class="single-boxed"><i class="flaticon-wheel-1"></i></span>
+                            <h3>Tires Services</h3>
+                            <p>Настройка ГБО всех типов</p>  
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-4 col-md-4">
+                        <div class="boxed-item">
+                            <span class="sirial-number">03</span>
+                            <span class="single-boxed"><i class="flaticon-speedometer"></i></span>
+                            <h3>Schedule Service</h3>
+                            <p>Послегарантийное обслуживание ГБО</p>  
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="col-sm-6 col-md-3">
+                        <div class="boxed-item">
+                            <span class="sirial-number">04</span>
+                            <span class="single-boxed"><i class="flaticon-car-radio"></i></span>
+                            <h3>Radiator Repair</h3>
+                            <p>Работаем в выходные дни</p>  
+                        </div>
+                    </div> -->
+                </div>
+                
+                <div class="col-md-12 text-center">
+                    <a href="about-us.html" class="btn theme-btn">О нас</a>
+                </div>
+            </div>
+        </div>
+        <!-- End Why Choose Us Area -->
+        
+        <!-- экономия калькулятор -->
+        <div class="content-block-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                       <div class="section-title text-center">
+                           <h2>Экономьте от<span> 60 000 рублей</span> в год</h2>
+                           <div class="car-icon"><img src="assets/img/cars.png" alt="car"></div>
+                        <!--    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p> -->
+                       </div>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="calculation-text">
+                        <h3>Экономьте от <span>60 000 рублей</span> в год</h3>
+                        <p class="text_one">1 км пробега на газе в 2,5 раза дешевле 1 км 
+                        пробега автомобиля на бензине</p>
+                        <strong>Рассчитайте, сколько денег вы сэкономите 
+                        после установки ГБО на ваш автомобиль</strong>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="calculation-work">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="calc">
+                                    <form class="appointment-form">
+                                    <div>Пробег в год.</div>
+                                    <div class="probeg"><input type="text" placeholder="Введите пробег в км" name="probeg" id="probeg"></div>
+                                    <div>Расход бензина в л.</div>
+                                    <div class="rashod"><input type="text" placeholder="Количество литров на 100 км" name="rashod" id="rashod"></div>
+                                    <div>Стоимость бензина в руб.</div>
+                                    <div class="stoimost"><input type="text" placeholder="Стоимость одного литра" name="stoimost" id="stoimost"></div>
+                                    </form>
+                                </div>
+                            </div>
+                           
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                
+                               
+                                <div class="calc">
+                                    <form class="appointment-form">
+                                    <div>Затраты на бензин</div>
+                                    <div><input type="text" id="zbenz" disabled></div>
+                                    <div>Затраты на газ</div>
+                                    <div><input type="text" id="zgaz" disabled></div>
+                                    <div>Экономия</div>
+                                    <div><input type="text" id="ekonom" disabled></div>
+                                    </form>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+              
+            </div>
+        </div>
+        <!-- End экономия калькулятор -->
+
+        <!-- Start Count-Down Area -->
+        <div class="count-down-area count-bg jarallax">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="count-down-boxed text-center">
+                            <span class="count-icon"><i class="ion-ios-people-outline"></i> <span class="count-number counter">12,500</span></span>
+                            <h3 class="count-info">Счастливых клиентов</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="count-down-boxed text-center">
+                            <span class="count-icon"><i class="ion-ios-partlysunny-outline"></i> <span class="count-number counter">17,500</span></span>
+                            <h3 class="count-info">Завершённых проектов</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="count-down-boxed text-center">
+                            <span class="count-icon"><i class="ion-ios-paperplane-outline"></i> <span class="count-number counter">15,500</span></span>
+                            <h3 class="count-info">Наград</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="count-down-boxed text-center">
+                            <span class="count-icon"><i class="ion-ios-thunderstorm-outline"></i> <span class="count-number counter">14,500</span></span>
+                            <h3 class="count-info">Отработанные часы</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Count-Down Area -->
+        
+        <!-- Start Auto Body Services Area -->
+        <div class="content-block-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="body-service-boxed-item auto-body-bg"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-8">
+                               <div class="section-title text-center">
+                                   <h2><span>Auto Body</span> services</h2>
+                                   <div class="car-icon"><img src="assets/img/cars.png" alt="car"></div>
+                                   <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                               <div class="services-list">
+                                    <ul>
+                                       <li>Установка оборудования</li>
+                                       <li>Обслуживание и ремонт ГБО уже установленных на автомобили</li>
+                                       <li>Наладка и регулировка</li>
+                                       <li>Установка ГБО Zavoli</li>
+                                       <li>Установка ГБО OMVL</li>
+                                       <li>Установка ГБО TAMONA</li>
+                                    </ul>
+                               </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <div class="services-list">
+                                   <ul>
+                                       <li>Сервисное, гарантийное и последующее техническое обслуживание автомобилей с установленным газовым оборудованием</li>
+                                       <li>Установка вариаторов опережения зажигания</li>
+                                       <li>Диагностические работы по двигателю и электрооборудованию автомобилей</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <a href="#" class="btn theme-btn">ОБРАТНЫЙ ЗВОНОК</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Auto Body Services Area -->
+        
+        <!-- Start Our testimonials Area -->
+        <div class="content-block-area gray-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <div class="section-title text-right">
+                            <h3>Что</h3>
+                            <h2><span>говорят о нас</span> клиенты</h2>
+                       </div>
+                        <div class="testimonials-car-boxed wow fadeInLeft">
+                           <img src="assets/img/testimonial-car.png" alt="Image">
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-4">
+                        <div class="testimonial-item">
+                            <div class="testimonial-single-item">
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to  making it look like readable English.</p>
+                                <ul>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="quotation-profile">
+                                <img src="assets/img/testimonials-1.jpg" alt="Image">
+                            </div>  
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-4">
+                        <div class="testimonial-item">
+                            <div class="testimonial-single-item">
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to  making it look like readable English.</p>
+                                <ul>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="quotation-profile">
+                                <img src="assets/img/31m.jpg" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-12 col-md-8 col-md-offset-4 text-center">
+                        <a href="#" class="btn theme-btn">Посмотреть отзывы</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Our testimonials Area -->
+        
+        <!-- Start Appointment Area -->
+        <div class="content-block-area collback-communication" id="element">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="apointment-preview-boxed man-image-bg wow fadeInUp"></div>
+                    </div>
+                    <div class="col-md-6">
+                       <div class="section-title text-center">
+                           <h2><span>Свяжитесь</span> с нами</h2>
+                           <div class="car-icon"><img src="assets/img/cars.png" alt="car"></div>
+                           <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. .</p>
+                       </div>
+                        <form class="appointment-form" action="index.html">
+                     
+                            <div class="row">
+                               <div class="col-md-12">
+                                   <p>Contact Details</p>
+                               </div>
+                                <div class="col-md-6">
+                                    <input type="text" name="yourName" placeholder="Контактное лицо" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" name="yourEmail" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" name="yourPhone" placeholder="Номер телефона" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" name="yourTime" placeholder="Когда Вам позвонить:" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <textarea name="yourMessage" id="yourMessage" placeholder="Ваши пожелания и комментарии:" required></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <button class="btn theme-btn" type="submit">Отправить</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Appointment Area -->
+        
+        <!-- Start News Area -->
+        <div class="content-block-area gray-bg">
+            <div class="container">
+               <div class="row">
+                   <div class="col-md-6 col-md-offset-3">
+                       <div class="section-title text-center">
+                           <h2><span>Последние 3</span> выполненные работы</h2>
+                           <div class="car-icon"><img src="assets/img/cars.png" alt="car"></div>
+                           <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                       </div>
+                   </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="single-blog-item">
+                            <a href="#" class="zoomin"><img src="assets/img/blog-item-one.jpg" alt="Image Description"></a>
+                            <div class="blog-item-info">
+                                <span class="blog-date">August 20, 2017</span> <div class="separator">|</div> 
+                                <a class="blog-tags red" href="#"><i class="fa fa-tag"></i> Auto</a>
+                                <a href="#"><h3>Blog Title Goes to Here</h3></a>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                
+                                <div class="row">
+                                    <div class="col-xs-7">
+                                        <div class="blog-item-profile">
+                                            <img src="assets/img/testimonials-1.jpg" alt="Image description"> <a href="#">anika rimjim</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-5 text-right">
+                                        <div class="blog-item-c-v-info">
+                                            <span><a href="#"><i class="fa fa-comments-o"> 25</i></a></span>
+                                            <span><a href="#"><i class="fa fa-eye"> 520</i></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                       
+                    <div class="col-sm-4">
+                        <div class="single-blog-item">
+                            <a href="#" class="zoomin"><img src="assets/img/blog-item-two.jpg" alt="Image Description"></a>
+                            <div class="blog-item-info">
+                                <span class="blog-date">August 20, 2017</span> <div class="separator">|</div> 
+                                <a class="blog-tags green" href="#"><i class="fa fa-tag"></i> motor</a>
+                                <a href="#"><h3>Blog Title Goes to Here</h3></a>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                
+                                <div class="row">
+                                    <div class="col-xs-7">
+                                        <div class="blog-item-profile">
+                                            <img src="assets/img/44w.jpg" alt="Image description"> <a href="#">anika rimjim</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-5 text-right">
+                                        <div class="blog-item-c-v-info">
+                                            <span><a href="#"><i class="fa fa-comments-o"> 25</i></a></span>
+                                            <span><a href="#"><i class="fa fa-eye"> 520</i></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-4">
+                        <div class="single-blog-item">
+                            <a href="#" class="zoomin"><img src="assets/img/blog-item-three.jpg" alt="Image Description"></a>
+                            <div class="blog-item-info">
+                                <span class="blog-date">August 20, 2017</span> <div class="separator">|</div> 
+                                <a class="blog-tags blue" href="#"><i class="fa fa-tag"></i> repair</a>
+                                <a href="#"><h3>Blog Title Goes to Here</h3></a>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                
+                                <div class="row">
+                                    <div class="col-xs-7">
+                                        <div class="blog-item-profile">
+                                            <img src="assets/img/10m.jpg" alt="Image description"> <a href="#">anika rimjim</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-5 text-right">
+                                        <div class="blog-item-c-v-info">
+                                            <span><a href="#"><i class="fa fa-comments-o"> 25</i></a></span>
+                                            <span><a href="#"><i class="fa fa-eye"> 520</i></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End News Area -->
+        
+        <!-- Start Our Parners Area -->
+        <div class="content-block-area">
+            <div class="container">
+               <div class="row">
+                   <div class="col-md-6 col-md-offset-3">
+                       <div class="section-title text-center">
+                           <h2><span>Наши</span> Партнёры</h2>
+                           <div class="car-icon"><img src="assets/img/cars.png" alt="car"></div>
+                           <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                       </div>
+                   </div>
+                </div>
+                <div class="partner-slides">
+                    <div class="single-partner-slide">
+                        <a class="partners-logo" href="#"><img src="assets/img/partner-1.png" alt="Image Description"></a>
+                    </div>
+                    <div class="single-partner-slide">
+                        <a class="partners-logo" href="#"><img src="assets/img/partner-2.png" alt="Image Description"></a>
+                    </div>
+                    <div class="single-partner-slide">
+                        <a class="partners-logo" href="#"><img src="assets/img/partner-3.png" alt="Image Description"></a>
+                    </div>
+                    <div class="single-partner-slide">
+                        <a class="partners-logo" href="#"><img src="assets/img/partner-4.png" alt="Image Description"></a>
+                    </div>
+                    <div class="single-partner-slide">
+                        <a class="partners-logo" href="#"><img src="assets/img/partner-5.png" alt="Image Description"></a>
+                    </div>
+                    <div class="single-partner-slide">
+                        <a class="partners-logo" href="#"><img src="assets/img/partner-6.png" alt="Image Description"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Our Parners Area -->
+        
+        <!-- Footer Area -->
+        <footer class="site-footer">
+            <!-- Footer Top Area -->
+            <div class="footer-top-area">
+                <div class="container">
+                   <div class="row">
+                       <div class="col-sm-4">
+                            <div class="footer-top-info">
+                               <span class="footer-icons"><i class="fa fa-map-o"></i></span> <p>Люберцы г.п.Красково Егорьевское ш. стр.3А</p>
+                            </div>
+                       </div>
+                       <div class="col-sm-4">
+                            <div class="footer-top-info">
+                               <span class="footer-icons"><i class="flaticon-crane"></i></span> <p>Working Days Monday to Friday</p>
+                            </div>
+                       </div>
+                       <div class="col-sm-4">
+                            <div class="footer-top-info">
+                               <span class="footer-icons"><i class="fa fa-headphones"></i></span> <p>Give us a free call (224) 228-8475</p>
+                            </div>
+                       </div>
+                   </div>
+                   <div class="hr-line"></div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="footer-wid">
+                                <a href="index.html" class="footer-logo"><img src="assets/img/logo.png" alt="logo"></a>
+                                <p>Компания "ГАЗ-Сервис" проводит данные работы как для отечественных автомобилей, так и для иномарок. Наши специалисты справляются с задачами любой сложности благодаря высокой квалификации, большому опыту работы и использованию современного оборудования от ведущих мировых производителей.</p>
+                                <a href="#" class="link-color">Подробнее о нас <i class="fa  fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-12">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="footer-wid footer-menu">
+                                        <h3 class="footer-wid-title">Навигация</h3>
+                                        <ul>
+                                            <li><a href="index.html"><i class="fa  fa-angle-right"></i> home</a></li>
+                                            <li><a href="about-us.html"><i class="fa  fa-angle-right"></i> About</a></li>
+                                            <li><a href="projects.html"><i class="fa  fa-angle-right"></i> our mission</a></li>
+                                            <li><a href="industries.html"><i class="fa  fa-angle-right"></i> services</a></li>
+                                            <li><a href="gallery.html"><i class="fa  fa-angle-right"></i> gallery</a></li>
+                                            <li><a href="blog.html"><i class="fa  fa-angle-right"></i> blog</a></li>
+                                            <li><a href="contact-us.html"><i class="fa  fa-angle-right"></i> contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="footer-wid footer-menu">
+                                        <h3 class="footer-wid-title">Время работы</h3>
+                                        <ul>
+                                            <li><i class="fa  fa-angle-right"></i> Monday:7:30am - 5:30pm</li>
+                                            <li><i class="fa  fa-angle-right"></i> Tuesday:7:30am - 5:30pm</li>
+                                            <li><i class="fa  fa-angle-right"></i> Wednesday:7:30am - 5:30pm</li>
+                                            <li><i class="fa  fa-angle-right"></i> Thursday:7:30am - 5:30pm</li>
+                                            <li><i class="fa  fa-angle-right"></i> Friday:7:30am - 5:30pm</li>
+                                            <li><i class="fa  fa-angle-right"></i> Saturday:7:30am - 3:00pm</li>
+                                            <li><i class="fa  fa-angle-right"></i> Sunday: Closed</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="footer-wid">
+                                        <h3 class="footer-wid-title">Адрес</h3>
+                                        <p>Люберцы г.п.Красково Егорьевское ш. стр.3А</p>
+                                        <div class="address-info">
+                                            <span><i class="fa  fa-phone"></i> 8(926) 543-5554</span><br>
+                                            <span><i class="fa  fa-phone"></i> 8(916) 055-5583</span><br>
+                                            <span><i class="fa  fa-envelope"></i> letter@gasgbo.ru </span>
+                                        </div>
+                                        <div class="subscribe">
+                                            <form action="index.html">
+                                                <input type="text" placeholder="Type your email" required>
+                                                <button>Subscribe now <i class="fa  fa-paper-plane"></i></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="social-icos">    
+                                <ul class="list-inline">
+                                    <li><a href="#"><i class="fa  fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                                   
+                                    <li><a href="#"><i class="fa  fa-instagram"></i></a></li>
+                                    <!-- <li><a href="#"><i class="fa  fa-google-plus"></i></a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div> <!-- End Footer Top -->
+
+            <!-- Footer Bottom Area -->
+            <div class="footer-copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-5">
+                                &copy; ГАЗ-Сервис 2015&mdash;<script>
+                                var d=new Date();
+                                document.write(d.getFullYear());
+                                </script> <!-- All Rights Reserved. -->
+                            </div>
+                        <div class="col-md-6 col-sm-7 text-right">
+                            <a href="#">Terms & Condition</a> <span class="seprator">|</span> <a href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Footer Bottom Area -->
+        </footer> <!-- End Footer Area -->
+        
+        <!-- Back Top top -->
+        <a href="#content" class="back-to-top">Top</a>
+        <!-- End Back Top top -->
+        
+		<!-- Bootstrap JS file -->
+		<script src="assets/js/bootstrap.min.js"></script>
+		<!-- Owl-Carousel JS file -->
+		<script src="assets/js/owl.carousel.min.js"></script>
+		<!-- Magnific Popup JS file -->
+		<script src="assets/js/jquery.magnific-popup.min.js"></script>
+		<!-- Mixitup JS file -->
+		<script src="assets/js/mixitup.min.js"></script>
+		<!-- Swiper JS file -->
+		<script src="assets/js/swiper.jquery.min.js"></script>
+		<!-- Datepicker JS file -->
+		<script src="assets/js/datepicker.js"></script>
+		<!-- WOW JS file -->
+		<script src="assets/js/wow.min.js"></script>
+		<!-- Isotop JS JS file -->
+        <script src="assets/js/isotope.pkgd.min.js"></script>
+		<!-- Waypoints JS file -->
+		<script src="assets/js/waypoints.min.js"></script>
+		<!-- Counter JS file -->
+		<script src="assets/js/jquery.counterup.min.js"></script>
+		<!-- RipplesJS -->
+		<script src="assets/js/jquery.ripples-min.js"></script>
+		<!-- YTPlayer JS -->
+		<script src="assets/js/jquery.mb.YTPlayer.min.js"></script>
+		<!-- Jarallax JS -->
+		<script src="assets/js/jarallax.min.js"></script>
+		<!-- Parsley JS -->
+        <script src="assets/js/parsley.min.js"></script>
+        <!-- jQuery Google Map JS file -->
+        <script src="assets/js/jquery.googlemap.js"></script>
+        <!-- Google Map api -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0jIY1DdGJ7yWZrPDmhCiupu_K2En_4HY"></script>
+        <!-- Custom JS file -->
+        <script src="assets/js/active.js"></script>
+        <!-- калькулятор -->
+        <script src="assets/js/calc.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.go_to').click( function(){ // ловим клик по ссылке с классом go_to
+                var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
+                    if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
+                    $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500); // анимируем скроолинг к элементу scroll_el
+                    }
+                    return false; // выключаем стандартное действие
+                });
+            });
+        </script>
+	</body>
+</html>
